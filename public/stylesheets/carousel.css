@@ -15,7 +15,8 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
-  top: 0;
+  width: 100%;
+  top: -10px;
   right: 0;
   left: 0;
   z-index: 20;
@@ -58,6 +59,26 @@ body {
   top: -400px;
   left: 0;
   width: 100%;
+}
+.carousel-inner > .item > #roy_car {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-inner > .item > #boys_and_girls_img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+}
+
+#boys_and_girls_font {
+  position: relative;
+  color: black;
+  margin-bottom: -30px;
+  margin-left: 400px;
 }
 
 

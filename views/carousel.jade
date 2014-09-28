@@ -1,186 +1,191 @@
 doctype html
-html.
-  <head>
-    <title>Carousel Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/stylesheets/carousel.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>This will eventually be the berkeley star page.</h1>
-              <p>But not quite yet.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>For now it's the Brent page.</h1>
-              <p>I think you'll like it.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>So enjoy.</h1>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/images/brent3.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>This is</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="/images/brent4.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>what you think</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="/images/brent6.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>it is.</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">This site has been dedicated to Brent.<span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Fuck yes it's a green clip-on.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/images/brent1.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/images/brent2.jpg" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">You'll see.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Class has begun.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="/images/brent5.jpg" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+html
+  head
+    title Carousel Template for Bootstrap
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='stylesheets/carousel.css', rel='stylesheet')
+  body
+    .navbar-wrapper
+      .container
+        .navbar.navbar-inverse.navbar-static-top(role='navigation')
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='#') Project name
+            .navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li.active
+                  a(href='#') Home
+                li
+                  a(href='#about') About
+                li
+                  a(href='#contact') Contact
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Dropdown
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='#') Action
+                    li
+                      a(href='#') Another action
+                    li
+                      a(href='#') Something else here
+                    li.divider
+                    li.dropdown-header Nav header
+                    li
+                      a(href='#') Separated link
+                    li
+                      a(href='#') One more separated link
+    //
+       Carousel
+          ================================================== 
+    #myCarousel.carousel.slide(data-ride='carousel')
+      //
+         Indicators 
+      ol.carousel-indicators
+        li.active(data-target='#myCarousel', data-slide-to='0')
+        li(data-target='#myCarousel', data-slide-to='1')
+        li(data-target='#myCarousel', data-slide-to='2')
+        li(data-target='#myCarousel', data-slide-to='3')
+        li(data-target='#myCarousel', data-slide-to='4')
+      .carousel-inner
+        .item.active
+          img(src='/images/berkeley_view.jpg', alt='First slide')
+          .container
+            .carousel-caption
+              h1 First Slide here.
+              p Test.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+        .item
+          img(src='/images/sean_kingston.jpg', alt='Second slide')
+          .container
+            .carousel-caption
+              h1 Sean Kingston will be here.
+              p He could take ya there.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
+        .item
+          img(id='roy_car', src='/images/royal_car.jpg', alt='Third slide')
+          .container
+            .carousel-caption
+              h1 The grand prize
+              p Will be a free royal caribbean trip.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+        .item
+          img(src='/images/greek.jpg', alt='Fourth slide')
+          .container
+            .carousel-caption
+              h1 At the beautiful greek theater.
+              p
+                a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+        .item
+          img(id='boys_and_girls_img', src='/images/boys-and-girls-club-logo.jpg', alt='Fifth slide')
+          .container
+            .carousel-caption
+              div(id='boys_and_girls_font')
+                h1 All Proceeds benefit the Boys and Girls Club of Oakland.
+                p Phi Kappa Psi's semi-annual philanthropic event.
+                p
+                  a.btn.btn-lg.btn-primary(href='#', role='button') Browse gallery
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+    //
+       /.carousel 
+    //
+       Marketing messaging and featurettes
+          ================================================== 
+    //
+       Wrap the rest of the page in another container to center all the content. 
+    .container.marketing
+      //
+         Three columns of text below the carousel 
+      .row
+        .col-lg-4
+          img.img-circle(src='/images/brent3.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+          h2 This is
+          p
+            | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        //
+           /.col-lg-4 
+        .col-lg-4
+          img.img-circle(src='/images/brent4.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+          h2 what you think
+          p
+            | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        //
+           /.col-lg-4 
+        .col-lg-4
+          img.img-circle(src='/images/brent6.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+          h2 it is.
+          p
+            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          p
+            a.btn.btn-default(href='#', role='button') View details »
+        //
+           /.col-lg-4 
+      //
+         /.row 
+      //
+         START THE FEATURETTES 
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | This site has been dedicated to Brent.
+            span.text-muted It'll blow your mind.
+          p.lead Fuck yes it's a green clip-on.
+        .col-md-5
+          img.featurette-image.img-responsive(src='/images/brent1.jpg', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row.featurette
+        .col-md-5
+          img.featurette-image.img-responsive(src='/images/brent2.jpg', alt='Generic placeholder image')
+        .col-md-7
+          h2.featurette-heading
+            | Oh yeah, it's that good.
+            span.text-muted See for yourself.
+          p.lead You'll see.
+      hr.featurette-divider
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading
+            | And lastly, this one.
+            span.text-muted Checkmate.
+          p.lead Class has begun.
+        .col-md-5
+          img.featurette-image.img-responsive(src='/images/brent5.jpg', alt='Generic placeholder image')
+      hr.featurette-divider
+      //
+         /END THE FEATURETTES 
+      //
+         FOOTER 
+      footer
+        p.pull-right
+          a(href='#') Back to top
+        p
+          | © 2014 Company, Inc. ·
+          a(href='#') Privacy
+          | ·
+          a(href='#') Terms
+    //
+       /.container 
+    //
+       Bootstrap core JavaScript
+          ================================================== 
+    //
+       Placed at the end of the document so the pages load faster 
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
