@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Carousel Template for Bootstrap
+    title Berkeley's Star
     link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='stylesheets/carousel.css', rel='stylesheet')
   body
@@ -15,7 +15,7 @@ html
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-              a.navbar-brand(href='#') Project name
+              a.navbar-brand(href='#') Berkeley's Star
             .navbar-collapse.collapse
               ul.nav.navbar-nav
                 li.active
@@ -23,24 +23,11 @@ html
                 li
                   a(href='#about') About
                 li
-                  a(href='#contact') Contact
-                li.dropdown
-                  a.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Dropdown
-                    span.caret
-                  ul.dropdown-menu(role='menu')
-                    li
-                      a(href='#') Action
-                    li
-                      a(href='#') Another action
-                    li
-                      a(href='#') Something else here
-                    li.divider
-                    li.dropdown-header Nav header
-                    li
-                      a(href='#') Separated link
-                    li
-                      a(href='#') One more separated link
+                  a(href='#auditions') Auditions
+                li
+                  a(href='#philanthropy') Philanthropy
+                li
+                  a(href='#acts') Guest Artists
     //
        Carousel
           ================================================== 
@@ -67,7 +54,7 @@ html
           .container
             .carousel-caption
               h1 Sean Kingston will be here.
-              p He could take ya there.
+              p And he could take ya there.
               p
                 a.btn.btn-lg.btn-primary(href='#', role='button') Learn more
         .item
@@ -113,36 +100,37 @@ html
           img.img-rounded(src='/images/folded11.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
           h2 About
           p
-            | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+            | Berkeley's Star is the biggest singing competition that Berkeley has to offer.
           p
-            a.btn.btn-default(href='#', role='button') View details »
+            a.btn.btn-default(href='#about', role='button') View details »
         //
            /.col-lg-4 
         .col-md-3
           img.img-rounded(src='/images/video71.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
           h2 Auditions
           p
-            | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+            | We are accepting auditions in the form of video submissions. But hurry! Auditions close soon!
           p
-            a.btn.btn-default(href='#', role='button') View details »
+            a.btn.btn-default(href='#auditions', role='button') View details »
         //
            /.col-lg-4 
         .col-md-3
           img.img-rounded(src='/images/bg_icon.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
           h2 Boys and Girls Club
           p
-            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            | As one of Phi Kappa Psi's semi-annual philanthropy events, all proceeds from the event will be donated to the
+            Boys & Girls Clubs of Oakland
           p
-            a.btn.btn-default(href='#', role='button') View details »
+            a.btn.btn-default(href='#philanthropy', role='button') View details »
         //
            /.col-lg-4 
         .col-md-3
           img.img-rounded(src='/images/striped6.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
           h2 Great Music
           p
-            | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            | There will be several guest musical acts and judges including Sean Kingston.
           p
-            a.btn.btn-default(href='#', role='button') View details »
+            a.btn.btn-default(href='#acts', role='button') View details »
         //
            /.col-lg-4 
       //
@@ -150,32 +138,68 @@ html
       //
          START THE FEATURETTES 
       hr.featurette-divider
-      .row.featurette
+      .row(id='about').featurette
         .col-md-7
           h2.featurette-heading
-            | This site has been dedicated to Brent.
+            | Berkeley's Star.
+            br
             span.text-muted It'll blow your mind.
-          p.lead Fuck yes it's a green clip-on.
+          p.lead 
+            | Berkeley’s Star is the biggest singing competition at Berkeley’s most premier local venue, the Greek Theatre.
+            | The live show will be held on October 30, 2014, where the 12 finalists will compete alongside 
+            | guest performances from the judges, upcoming talent in the entertainment industry, and some of the most well 
+            | known UC Berkeley student groups. The winner will be chosen by the audience and a panel of acclaimed individuals
+            | from the music industry. The winner not only becomes Berkeley’s Star but also wins a 7-day cruise on Royal
+            | Caribbean International’s Oasis or Allure of the Seas for two and a guaranteed audition in front of
+            | RCI Entertainment Department.
         .col-md-5
-          img.featurette-image.img-responsive(src='/images/brent1.jpg', alt='Generic placeholder image')
+          img.featurette-image.img-responsive(src='/images/greek-theater-day.jpg', alt='Generic placeholder image')
       hr.featurette-divider
-      .row.featurette
+      .row(id='auditions').featurette
         .col-md-5
           img.featurette-image.img-responsive(src='/images/brent2.jpg', alt='Generic placeholder image')
         .col-md-7
           h2.featurette-heading
-            | Oh yeah, it's that good.
-            span.text-muted See for yourself.
-          p.lead You'll see.
+            | Auditions.
+            br
+            span.text-muted Take the stage.
+          p.lead Trying out is easy.
+            ul.lead
+              li Send a 90 second audition tape to bfreed@berkeley.edu by October 1st
+              li Make sure to include your full name and contact information
+              li 
+                | If you get chosen to move onto the second round of auditions,
+                | we will contact you in early October and those that make it past this stage will be competing in the Live competition. 
+          p.lead
+            | The most talented will be invited to audition again in front of a panel of judges.
+            | From there, the top 24 performances will make it through the next round, where we will choose 12 finalists.
       hr.featurette-divider
-      .row.featurette
+      .row(id='philanthropy').featurette
         .col-md-7
           h2.featurette-heading
-            | And lastly, this one.
-            span.text-muted Checkmate.
-          p.lead Class has begun.
+            | Boys & Girls Clubs
+          p.lead
+            | Phi Kappa Psi is honored to work alongside the Boys & Girls Clubs of Oakland to raise
+            | money and awareness for a cause that so many people can connect to around the UC Berkeley campus.
+            | The Boys & Girls Club is an amazing organization that works endlessly to
+            | empower youth to be role models in their communities and be limited by nothing.
+            | Channeling our creative ways of spreading message around campus, we have put on one
+            | of the most dynamic and interactive philanthropy events of the year. While people may think
+            | UC Berkeley students are only competent in the classroom, Berkeley’s Star provides a platform
+            | for students to showcase their star talent. With all these new singing competitions, people
+            | are more inspired than ever to be the next star. We are bringing this national movement towards
+            | being the best singer to our school find Berkeley’s Star.  
         .col-md-5
-          img.featurette-image.img-responsive(src='/images/brent5.jpg', alt='Generic placeholder image')
+          img.featurette-image.img-responsive(src='/images/bg_icon.jpg', alt='Generic placeholder image')
+      hr.featurette-divider
+      .row(id='acts').featurette
+        .col-md-5
+          img.featurette-image.img-responsive(src='/images/greek-theater-day.jpg', alt='Generic placeholder image')
+        .col-md-7
+          h2.featurette-heading
+            | Great Guest Acts
+          p.lead
+            | Talk about all the cool performers we have
       hr.featurette-divider
       //
          /END THE FEATURETTES 
