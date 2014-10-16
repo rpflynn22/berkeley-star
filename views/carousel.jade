@@ -4,6 +4,8 @@ html
     title Berkeley's Star
     link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='stylesheets/carousel.css', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='javascripts/berk-star.js')
   body
     .navbar-wrapper
       .container
@@ -42,13 +44,13 @@ html
         li(data-target='#myCarousel', data-slide-to='4')
       .carousel-inner
         .item.active
-          img(src='/images/berkeley_view.jpg', alt='First slide')
+          img(class='push-up', src='/images/berkeley_view.jpg', alt='First slide')
           .container
             .carousel-caption
               h1 Berkeley's Star
               p Berkeley's best singing competition
         .item
-          img(src='/images/sean_kingston.jpg', alt='Second slide')
+          img(class='push-up', src='/images/sean_kingston.jpg', alt='Second slide')
           .container
             .carousel-caption
               h1 Sean Kingston will be here.
@@ -62,18 +64,20 @@ html
               h1 Great Prizes
               p First prize is a 7 day Royal Caribbean Cruise
         .item
-          img(src='/images/greek.jpg', alt='Fourth slide')
+          img(src='/images/zellerbach.jpg', alt='Fourth slide')
           .container
             .carousel-caption
-              h1 The Greek Theater
-              p Berkeley's premier large event venue
+              h1 Zellerbach Hall
+              p UC Berkeley's premier performance venue
         .item
-          img(id='boys_and_girls_img', src='/images/boys-and-girls-club-logo.jpg', alt='Fifth slide')
+          img(id='boys_and_girls_img', src='/images/bg-logo-negative.jpg', alt='Fifth slide')
           .container
             .carousel-caption
               div(id='boys_and_girls_font')
-                h1 All Proceeds benefit the Boys and Girls Club of Oakland
-                p Phi Kappa Psi's semi-annual philanthropic event
+                h1 
+                  | Proceeds benefit
+                  br
+                  | Boys & Girls Clubs of Oakland
                 p
                   a.btn.btn-lg.btn-primary(href='#philanthropy', role='button') Philanthropy
       a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
@@ -134,7 +138,7 @@ html
          START THE FEATURETTES 
       hr.featurette-divider
       .row(id='about').featurette
-        .col-md-7
+        .col-md-6
           h2.featurette-heading
             | Berkeley's Star.
             br
@@ -147,8 +151,8 @@ html
             | from the music industry. The winner not only becomes Berkeley’s Star but also wins a 7-day cruise on Royal
             | Caribbean International’s Oasis or Allure of the Seas for two and a guaranteed audition in front of
             | RCI Entertainment Department.
-        .col-md-5
-          img.featurette-image.img-responsive(src='/images/greek-theater-day.jpg', alt='Generic placeholder image')
+        .col-md-6
+          img(id="inside-zellerbach").featurette-image.img-responsive(src='/images/zellerbach_inside.jpg', alt='Generic placeholder image')
       hr.featurette-divider
       .row(id='auditions').featurette
         .col-md-5
@@ -215,5 +219,4 @@ html
           ================================================== 
     //
        Placed at the end of the document so the pages load faster 
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
