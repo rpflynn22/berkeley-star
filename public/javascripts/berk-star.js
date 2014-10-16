@@ -1,10 +1,5 @@
 $(window).ready(updateHeight);
 $(window).resize(updateHeight);
-$(document).ready(function() {
-	$('img').click(function() {
-		alert($(window).width());
-	});
-});
 
 function updateHeight()
 {
