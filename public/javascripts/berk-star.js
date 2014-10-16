@@ -1,5 +1,10 @@
 $(window).ready(updateHeight);
 $(window).resize(updateHeight);
+$(document).ready(function() {
+	$('img').click(function() {
+		alert($(window).width());
+	});
+});
 
 function updateHeight()
 {
@@ -8,6 +13,15 @@ function updateHeight()
 	var item = $('.carousel .item');
     var div = $('#dynamicheight');
     var width = car.width();
+    if (width < 970) {
+    	var height = Math.floor(width * .5);
+    	$('.push-up').css('top', 0);
+    	car.css('height', height);
+    	item.css('height', height);
+    } else if (width >= 970) {
+    	car.css('height', 500);
+    	item.css('height', 500);
+    }
     //alert(width);
     //div.css('height', width);
 }
