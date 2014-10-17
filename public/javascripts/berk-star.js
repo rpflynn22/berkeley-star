@@ -1,6 +1,15 @@
 $(window).ready(updateHeight);
 $(window).resize(updateHeight);
 
+$(document).ready(function() {
+
+	$('img').click(function(){
+        $("body").animate({
+          scrollTop: 100
+     });
+   });
+});
+
 function updateHeight()
 {
 	//alert('here');
@@ -16,6 +25,7 @@ function updateHeight()
     } else if (width >= 970) {
     	car.css('height', 500);
     	item.css('height', 500);
+    	$('.push-up').css('top', -200);
     }
     //alert(width);
     //div.css('height', width);
