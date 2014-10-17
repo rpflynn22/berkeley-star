@@ -71,7 +71,7 @@ body {
 
 .carousel-inner > .item > #roy_car {
   position: absolute;
-  bottom: 0px;
+  top: -200px;
   left: 0;
   width: 100%;
 }
@@ -90,6 +90,11 @@ body {
   margin-bottom: -30px;
   margin-left: 400px;
   */
+}
+
+#roy-car-cap {
+  /*margin-left: 400px;
+  width: 100%;*/
 }
 
 #inside-zellerbach {
