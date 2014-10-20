@@ -1,5 +1,30 @@
 $(window).ready(updateHeight);
 $(window).resize(updateHeight);
+$(document).ready(function() {
+    var about = $('#about').offset().top;
+    var philanthropy = $('#philanthropy').offset().top;
+    var acts = $('#acts').offset().top;
+    $(window).scroll(function() {
+        var dist = $(window).scrollTop();
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            makeActive('acts-nav');
+        }
+        else if (dist >= acts) {
+            makeActive('acts-nav');
+        } else if (dist >= philanthropy) {
+            makeActive('philanthropy-nav');
+        } else if (dist >= about) {
+            makeActive('about-nav');
+        } else {
+            makeActive('home-nav');
+        }
+    });
+});
+
+function makeActive(idToActivate) {
+    $('#home-nav, #philanthropy-nav, #about-nav, #acts-nav').removeClass('active');
+    $('#' + idToActivate).addClass('active');
+}
 
 $(document).ready(function() {
 

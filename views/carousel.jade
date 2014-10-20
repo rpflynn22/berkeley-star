@@ -20,16 +20,16 @@ html
               a.navbar-brand(href='#') Berkeley's Star
             .navbar-collapse.collapse
               ul.nav.navbar-nav
-                li
+                li#home-nav.active
                   a(href='#') Home
-                li.active
+                li#about-nav
                   a(href='#about') About
-                li
-                  a(href='#tickets') Tickets
-                li
+                li#philanthropy-nav
                   a(href='#philanthropy') Philanthropy
-                li
+                li#acts-nav
                   a(href='#acts') Guest Artists
+                li#tickets-nav
+                  a(href='#tickets') Tickets
     //
        Carousel
           ================================================== 
@@ -140,6 +140,9 @@ html
          START THE FEATURETTES 
       hr(id='about').featurette-divider
       .row.featurette
+        .col-md-5
+          img.featurette-image.img-responsive(src='/images/berkeleys-star-logo.jpg', alt='Generic placeholder image')
+        .col-md-1
         .col-md-6
           h2.featurette-heading
             | Berkeley's Star.
@@ -153,25 +156,8 @@ html
             | that works endlessly to empower youth to be role models in their communities and
             | be limited by nothing. Working alongside The Boys & Girls Clubs of Oakland,
             | we have put on one of the most dynamic and interactive philanthropy events of the year. 
-        .col-md-6
-          img(id="inside-zellerbach").featurette-image.img-responsive(src='/images/zellerbach_inside.jpg', alt='Generic placeholder image')
-      hr(id='tickets').featurette-divider
+      hr(id='philanthropy').featurette-divider
       .row.featurette
-        .col-md-5
-          img.featurette-image.img-responsive(src='/images/berkeleys-star-logo.jpg', alt='Generic placeholder image')
-        .col-md-7
-          h2.featurette-heading
-            | Tickets
-          br
-          p.lead 
-            | Are YOU ready for the biggest event of this school year? Have YOU ever wanted to sing
-            | at one of Berkeley’s most premiere venues in front of a pumped up crowd? Well then,
-            | you’re in luck! Here’s what you have to do: Send a 90 second audition tape to
-            | bfreed@berkeley.edu by October 10th. Make sure to include your full name, email, and
-            | phone number. If you get chosen to move onto the second round of auditions, we will
-            | contact you by October 15th. Let your inner singer out and audition to be the first ever Berkeley's Star!
-      hr.featurette-divider
-      .row(id='philanthropy').featurette
         .col-md-7
           h2.featurette-heading
             | Boys & Girls Clubs
@@ -194,7 +180,8 @@ html
       .row(id='acts').featurette
         .col-md-3
           img.featurette-image.img-responsive(src='/images/lauren.jpg', alt='Generic placeholder image')
-        .col-md-9
+        .col-md-1
+        .col-md-8 
           h2.featurette-heading
             | Great Guest Acts
           br
