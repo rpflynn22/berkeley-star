@@ -9,7 +9,7 @@ html
   body
     .navbar-wrapper
       .container
-        .navbar.navbar-inverse.navbar-static-top(role='navigation')
+        .navbar.navbar-default.navbar-fixed-top(role='navigation')
           .container
             .navbar-header
               button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -20,12 +20,12 @@ html
               a.navbar-brand(href='#') Berkeley's Star
             .navbar-collapse.collapse
               ul.nav.navbar-nav
-                li.active
-                  a(href='#') Home
                 li
+                  a(href='#') Home
+                li.active
                   a(href='#about') About
                 li
-                  a(href='#auditions') Auditions
+                  a(href='#tickets') Tickets
                 li
                   a(href='#philanthropy') Philanthropy
                 li
@@ -99,18 +99,20 @@ html
           img.img-rounded(src='/images/folded11.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
           h2 About
           p
-            | Berkeley's Star is the biggest singing competition that Berkeley has to offer.
+            | Berkeley's Star will be held at Zellerbach Hall on December 2nd.
+            | This is the biggest singing competition that Berkeley has to offer, so don't miss out!
           p
             a.btn.btn-default(href='#about', role='button') View details »
         //
            /.col-lg-4 
         .col-md-3
-          img.img-rounded(src='/images/video71.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
-          h2 Auditions
+          img.img-rounded(src='/images/ticket.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+          h2 Tickets
           p
-            | We are accepting auditions in the form of video submissions. But hurry! Auditions close soon!
+            | Get your tickets for Berkeley's Star. They are still available but are going fast, so be sure to get yours
+            | before they're gone!
           p
-            a.btn.btn-default(href='#auditions', role='button') View details »
+            a.btn.btn-default(href='http://www.calperformances.org/buy/', target='_blank', role='button') Get Tickets »
         //
            /.col-lg-4 
         .col-md-3
@@ -136,8 +138,8 @@ html
          /.row 
       //
          START THE FEATURETTES 
-      hr.featurette-divider
-      .row(id='about').featurette
+      hr(id='about').featurette-divider
+      .row.featurette
         .col-md-6
           h2.featurette-heading
             | Berkeley's Star.
@@ -153,15 +155,13 @@ html
             | we have put on one of the most dynamic and interactive philanthropy events of the year. 
         .col-md-6
           img(id="inside-zellerbach").featurette-image.img-responsive(src='/images/zellerbach_inside.jpg', alt='Generic placeholder image')
-      hr.featurette-divider
-      .row(id='auditions').featurette
+      hr(id='tickets').featurette-divider
+      .row.featurette
         .col-md-5
           img.featurette-image.img-responsive(src='/images/berkeleys-star-logo.jpg', alt='Generic placeholder image')
         .col-md-7
           h2.featurette-heading
-            | Auditions.
-            br
-            span.text-muted Take the stage.
+            | Tickets
           br
           p.lead 
             | Are YOU ready for the biggest event of this school year? Have YOU ever wanted to sing
