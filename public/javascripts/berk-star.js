@@ -9,11 +9,11 @@ $(document).ready(function() {
         if($(window).scrollTop() + $(window).height() == $(document).height()) {
             makeActive('acts-nav');
         }
-        else if (dist >= acts) {
+        else if (dist >= acts - 10) {
             makeActive('acts-nav');
-        } else if (dist >= philanthropy) {
+        } else if (dist >= philanthropy - 10) {
             makeActive('philanthropy-nav');
-        } else if (dist >= about) {
+        } else if (dist >= about - 10) {
             makeActive('about-nav');
         } else {
             makeActive('home-nav');
