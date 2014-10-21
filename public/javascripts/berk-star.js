@@ -24,20 +24,10 @@ $(document).ready(function() {
 function makeActive(idToActivate) {
     $('#home-nav, #philanthropy-nav, #about-nav, #acts-nav').removeClass('active');
     $('#' + idToActivate).addClass('active');
-}
-
-$(document).ready(function() {
-
-	$('img').click(function(){
-        $("body").animate({
-          scrollTop: 100
-     });
-   });
-});
+}   
 
 function updateHeight()
 {
-	//alert('here');
 	var car = $('.carousel');
 	var item = $('.carousel .item');
     var div = $('#dynamicheight');
@@ -52,6 +42,4 @@ function updateHeight()
     	item.css('height', 500);
     	$('.push-up').css('top', -200);
     }
-    //alert(width);
-    //div.css('height', width);
 }

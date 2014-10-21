@@ -17,11 +17,11 @@ html
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-              a.navbar-brand(href='#') Berkeley's Star
+              a.navbar-brand(href='/') Berkeley's Star
             .navbar-collapse.collapse
               ul.nav.navbar-nav
                 li#home-nav.active
-                  a(href='#') Home
+                  a(href='/') Home
                 li#about-nav
                   a(href='#about') About
                 li#philanthropy-nav
@@ -29,7 +29,7 @@ html
                 li#acts-nav
                   a(href='#acts') Guest Artists
                 li#tickets-nav
-                  a(href='#tickets') Tickets
+                  a(href='http://www.calperformances.org/buy/', target='_blank') TICKETS
     //
        Carousel
           ================================================== 
@@ -49,6 +49,8 @@ html
             .carousel-caption
               h1 Berkeley's Star
               p Berkeley's best singing competition
+              p
+                a.btn.btn-lg.btn-primary(href='http://www.calperformances.org/buy/', role='button') Get Tickets
         .item
           img(class='push-up', src='/images/sean_kingston.jpg', alt='Second slide')
           .container
@@ -116,7 +118,7 @@ html
         //
            /.col-lg-4 
         .col-md-3
-          img.img-rounded(src='/images/bg_icon.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+          img.img-rounded(src='/images/bg_icon.jpg', alt='Generic placeholder image', style='width: 170px; height: 140px;')
           h2 Boys & Girls Clubs
           p
             | As one of Phi Kappa Psi's semi-annual philanthropy events, all proceeds from the event will be donated to the
@@ -191,24 +193,13 @@ html
             | in the entertainment industry, and some of the most well known UC Berkeley student
             | groups. Judges and performers include: Sean Kingston, Lauren Weintraub, and student
             | groups soon to be announced!
+          p
+            a.btn.btn-default(href='/artists', role='button') Learn more about the artists »
       hr.featurette-divider
-      //
-         /END THE FEATURETTES 
-      //
-         FOOTER 
       footer
         p.pull-right
           a(href='#') Back to top
         p
-          | © 2014 Company, Inc. ·
-          a(href='#') Privacy
-          | ·
-          a(href='#') Terms
-    //
-       /.container 
-    //
-       Bootstrap core JavaScript
-          ================================================== 
-    //
-       Placed at the end of the document so the pages load faster 
+          | Berkeley Star 2014
+
     script(src='/bootstrap/js/bootstrap.min.js')

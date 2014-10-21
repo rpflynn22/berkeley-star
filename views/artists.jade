@@ -1,0 +1,76 @@
+doctype html
+html
+  head
+    title Berkeley's Star Guest Artists
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='stylesheets/carousel.css', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+  body
+    .navbar-wrapper
+      .container
+        .navbar.navbar-default.navbar-fixed-top(role='navigation')
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='/') Berkeley's Star
+            .navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li#home-nav
+                  a(href='/') Home
+                li#about-nav
+                  a(href='/#about') About
+                li#philanthropy-nav
+                  a(href='/#philanthropy') Philanthropy
+                li#acts-nav
+                  a(href='/#acts') Guest Artists
+                li#tickets-nav
+                  a(href='http://www.calperformances.org/buy/', target='_blank') TICKETS
+    .jumbotron
+      .container
+        h1 Guest Artists
+        p
+          | We have two very talented and very distinguished guests who
+          | will not only be judging the performers, but will also be making
+          | special performances themselves.
+
+    .container.marketing
+      //
+         Three columns of text below the carousel 
+      .row.text-center
+        .col-lg-6
+          img.img-rounded(src='/images/sean-kingston.jpg', alt='Generic placeholder image', style='width: 380px; height: 520px;')
+          h2 Sean Kingston
+          p.text-left.lead
+            | Dedicating nearly his entire life to music and achieving superstardom when he was
+            | just 17, Sean Kingston has amassed an untold amount of experience as a singer/songwriter
+            | over the years. On his third-full length album Back 2 Life, the 23-year-old builds
+            | on that experience by greatly expanding his songwriting role, nixing the multi-producer
+            | approach of his last release, and pushing for a fresh new sound. Like his 2007
+            | self-titled debut (featuring the double-platinum breakout hit “Beautiful Girls”)
+            | and sophomore album Tomorrow (featuring the smash singles “Fire Burning” and
+            | “Face Drop”), Back 2 Life fuses reggae, hip-hop, R&B, and electro to create
+            | melody-soaked pop. But on Back 2 Life, the singer/songwriter blends his newly
+            | strengthened vocals with fiercely inventive effects and hard-hitting live
+            | instrumentation—a formula that’s yielded his most passionately inspired
+            | work to date.
+          p
+            a.btn.btn-default(href='http://www.seankingston.com', target='_blank', role='button') Visit Site »
+        .col-lg-6
+          img.img-rounded(src='/images/lauren.jpg', alt='Generic placeholder image', style='width: 380px; height: 520px;')
+          h2 Lauren Weintraub
+          p.text-left.lead
+            | Lauren Weintraub is a 16 year old singer/songwriter from the Boston area. Her
+            | style is Indie Pop and she is inspired by Sara Bareilles, Ed Sheeran and Ingrid
+            | Michaelson. She plays piano, acoustic and electric guitar, and ukulele. She has
+            | performed at The Listening Room in NYC and has a regular gig at the Starbucks
+            | in Harvard Square in Cambridge. She had an invitation only audition for The
+            | Voice - Season 7. She is also a professional Equity actress having performed the
+            | title role in Annie in three professional theaters and has been singing for over
+            | 10 years. Be sure to check her out on YouTube, Vine and Sound Cloud at
+            | laurenweintraubmusic. She is thrilled to be participating in Berkeley Star!
+          p
+            a.btn.btn-default(href='http://www.laurenweintraub.com', target='_blank', role='button') Visit Site »

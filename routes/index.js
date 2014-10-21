@@ -6,4 +6,9 @@ router.get('/', function(req, res) {
   res.render('carousel');
 });
 
+/* GET artists. */
+router.get('/artists', function(req, res) {
+	res.render('artists');
+});
+
 module.exports = router;
