@@ -23,11 +23,13 @@ html
                 li#home-nav.active
                   a(href='/') Home
                 li#about-nav
-                  a(href='#about') About
+                  a(href='/#about') About
                 li#philanthropy-nav
-                  a(href='#philanthropy') Philanthropy
+                  a(href='/#philanthropy') Philanthropy
                 li#acts-nav
-                  a(href='#acts') Guest Artists
+                  a(href='/#acts') Special Guests
+                li#top-12
+                  a(href='/top-12') Top 12
                 li#tickets-nav
                   a(href='https://commerce.cpsma.berkeley.edu/Tickets/calendar/index.aspx', target='_blank') TICKETS
               ul.nav.navbar-nav.navbar-right
@@ -62,7 +64,7 @@ html
               h1 Sean Kingston will be here.
               p And he can take ya there.
               p
-                a.btn.btn-lg.btn-primary(href='#acts', role='button') Learn more
+                a.btn.btn-lg.btn-primary(href='/#acts', role='button') Learn more
         .item
           img(id='roy_car', src='/images/oasis-of-the-seas.jpg', alt='Third slide')
           .container
@@ -85,7 +87,7 @@ html
                   br
                   | Boys & Girls Clubs of Oakland
                 p
-                  a.btn.btn-lg.btn-primary(href='#philanthropy', role='button') Philanthropy
+                  a.btn.btn-lg.btn-primary(href='/#philanthropy', role='button') Philanthropy
       a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
         span.glyphicon.glyphicon-chevron-left
       a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
@@ -108,7 +110,7 @@ html
             | Berkeley's Star will be held at Zellerbach Hall on December 2nd.
             | This is the biggest singing competition that Berkeley has to offer, so don't miss out!
           p
-            a.btn.btn-default(href='#about', role='button') View details »
+            a.btn.btn-default(href='/#about', role='button') View details »
         //
            /.col-lg-4 
         .col-md-3
@@ -122,13 +124,13 @@ html
         //
            /.col-lg-4 
         .col-md-3
-          img.img-rounded(src='/images/bg_icon.jpg', alt='Generic placeholder image', style='width: 170px; height: 140px;')
-          h2 Boys & Girls Clubs
+          img.img-rounded(src='/images/bg_clubs_oak.jpg', alt='Generic placeholder image', style='width: 230px; height: 140px;')
+          h2 Philanthropy
           p
             | As one of Phi Kappa Psi's semi-annual philanthropy events, all proceeds from the event will be donated to the
             | Boys & Girls Clubs of Oakland.
           p
-            a.btn.btn-default(href='#philanthropy', role='button') View details »
+            a.btn.btn-default(href='/#philanthropy', role='button') View details »
         //
            /.col-lg-4 
         .col-md-3
@@ -137,7 +139,7 @@ html
           p
             | There will be several guest musical acts and judges including Sean Kingston.
           p
-            a.btn.btn-default(href='#acts', role='button') View details »
+            a.btn.btn-default(href='/#acts', role='button') View details »
         //
            /.col-lg-4 
       //
@@ -164,7 +166,7 @@ html
             | we have put on one of the most dynamic and interactive philanthropy events of the year. 
       hr(id='philanthropy').featurette-divider
       .row.featurette
-        .col-md-7
+        .col-md-5
           h2.featurette-heading
             | Boys & Girls Clubs
           br
@@ -180,8 +182,8 @@ html
             | enhance the development of boys and girls by instilling a sense of competence,
             | usefulness, belonging and influence. 
         .col-md-1
-        .col-md-4
-          img.featurette-image.img-responsive(src='/images/bg_icon.jpg', alt='Generic placeholder image')
+        .col-md-6
+          img.featurette-image.img-responsive(src='/images/bg_clubs_oak.jpg', alt='Generic placeholder image')
       hr.featurette-divider
       .row(id='acts').featurette
         .col-md-3
@@ -189,7 +191,7 @@ html
         .col-md-1
         .col-md-8 
           h2.featurette-heading
-            | Great Guest Acts
+            | Great Special Guests
           br
           p.lead
             | The Live Show will be held at the Zellerbach Hall on December 2nd, 2014, where the 10
