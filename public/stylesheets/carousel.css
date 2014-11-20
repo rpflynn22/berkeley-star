@@ -43,7 +43,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   min-width: 800px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -100,6 +100,17 @@ body {
 
 #artist-banner {
   font-size: 80px;
+}
+
+iframe {
+  margin-left: 170px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+#vid-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
