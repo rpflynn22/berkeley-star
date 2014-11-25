@@ -30,6 +30,8 @@ html
                   a(href='/#acts') Special Guests
                 li#top-12
                   a(href='/top-12') Top 12
+                li#fund-me
+                  a(href='http://www.facebook.com/l.php?u=http%3A%2F%2Fwww.gofundme.com%2Fhjzqm8&h=kAQFgyPqp', target='_blank') DONATE NOW
                 li#tickets-nav
                   a(href='https://commerce.cpsma.berkeley.edu/Tickets/calendar/index.aspx', target='_blank') TICKETS
               ul.nav.navbar-nav.navbar-right
@@ -148,7 +150,7 @@ html
          /.row 
       //
          START THE FEATURETTES 
-      hr(id='about').featurette-divider
+      hr.featurette-divider#about
       .row.featurette
         .col-md-5
           img.featurette-image.img-responsive(src='/images/berkeleys-star-logo.jpg', alt='Generic placeholder image')
@@ -160,13 +162,16 @@ html
             span.text-muted It'll blow your mind.
           br
           p.lead 
-            | Phi Kappa Psi is honored to work alongside The Boys & Girls Clubs of Oakland
-            | to raise money and awareness for a cause that so many people can connect to
-            | around the UC Berkeley campus. The Boys & Girls Clubs is an amazing organization
-            | that works endlessly to empower youth to be role models in their communities and
-            | be limited by nothing. Working alongside The Boys & Girls Clubs of Oakland,
-            | we have put on one of the most dynamic and interactive philanthropy events of the year. 
-      hr(id='philanthropy').featurette-divider
+            | Phi Kappa Psi is excited to host Berkeley’s Star 2014 in collaboration
+            | with the Boys & Girls Clubs of Oakland. Berkeley’s Star is the biggest
+            | singing competition at UC Berkeley hosted at the campus’s most premier
+            | local venue: Zellerbach Hall. Twelve finalists have been singled out
+            | through a series of exciting and comprehensive auditions over the past
+            | month, and they need YOUR vote! The twelve will compete at the Live
+            | Show where they will perform alongside guest performances from the
+            | judges, upcoming talent in the entertainment industry, and some of the
+            | most well-known UC Berkeley student groups.
+      hr.featurette-divider#philanthropy
       .row.featurette
         .col-md-5
           h2.featurette-heading
@@ -186,8 +191,8 @@ html
         .col-md-1
         .col-md-6
           img.featurette-image.img-responsive(src='/images/bg_clubs_oak.jpg', alt='Generic placeholder image')
-      hr.featurette-divider
-      .row(id='acts').featurette
+      hr.featurette-divider#acts
+      .row.featurette
         .col-md-3
           img.featurette-image.img-responsive(src='/images/lauren.jpg', alt='Generic placeholder image')
         .col-md-1
