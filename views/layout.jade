@@ -1,11 +1,75 @@
 doctype html
 html
   head
-    title= title
-    block css
-      link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
-      link(rel='stylesheet', href='/stylesheets/style.css')
-    block js
-      script(src='/bootstrap/js/bootstrap.min.js')
+    title Berkeley's Star
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='stylesheets/carousel.css', rel='stylesheet')
+    script(src='javascripts/berk-star.js')
   body
+    .navbar-wrapper
+      .container
+        .navbar.navbar-default.navbar-fixed-top(role='navigation')
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='/') Berkeley's Star
+            .navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li#home-nav.active
+                  a(href='/') Home
+                li#about-nav
+                  a(href='/#about') About
+                li#philanthropy-nav
+                  a(href='/#philanthropy') Philanthropy
+                li.dropdown
+                  a.dropdown-toggle(href="#", data-toggle='dropdown', role='button', aria-expanded='false')
+                    | Berkeley's Star 2014
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='#') Performances
+                    li
+                      a(href='#') Photos
+                    li
+                      a(href='#') Special Guests
+                    li
+                      a(href='#') Top 12
+                li#fund-me
+                  a(href='http://www.gofundme.com/hjzqm8', target='_blank') DONATE NOW
+                li#tickets-nav
+                  a(href='/tickets-coming-soon', target='_blank') TICKETS
+              ul.nav.navbar-nav.navbar-right
+                li
+                  a.social-link(href='https://www.facebook.com/events/569750673151001/', target='_blank')
+                    img.img-rounded.social-icon(src='/images/facebook-icon.png')
+                li
+                  a.social-link(href='https://www.instagram.com/berkeleystarofficial', target='_blank')
+                    img.img-rounded.social-icon(src='/images/instagram-icon.png')
+                li
+                  a.social-link(href='https://www.twitter.com/berkeleys_star', target='_blank')
+                    img.img-rounded.social-icon(src='/images/twitter-icon.png')
     block content
+
+    br
+    .container
+      hr
+      br
+      footer
+        p
+          | Contact Us
+          br
+          | official@berkeleystar.com
+          br
+          | Berkeley's Star
+          br
+          | 2424 Warring St.
+          br
+          | Berkeley, CA 94704
+        p.pull-right
+          a(href='#') Back to top

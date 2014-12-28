@@ -1,220 +1,144 @@
-doctype html
-html
-  head
-    title Berkeley's Star
-    link(href='bootstrap/css/bootstrap.min.css', rel='stylesheet')
-    link(href='stylesheets/carousel.css', rel='stylesheet')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src='javascripts/berk-star.js')
-  body
-    .navbar-wrapper
-      .container
-        .navbar.navbar-default.navbar-fixed-top(role='navigation')
-          .container
-            .navbar-header
-              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.navbar-brand(href='/') Berkeley's Star
-            .navbar-collapse.collapse
-              ul.nav.navbar-nav
-                li#home-nav.active
-                  a(href='/') Home
-                li#about-nav
-                  a(href='/#about') About
-                li#philanthropy-nav
-                  a(href='/#philanthropy') Philanthropy
-                li#acts-nav
-                  a(href='/#acts') Special Guests
-                li#top-12
-                  a(href='/top-12') Top 12
-                li#fund-me
-                  a(href='http://www.gofundme.com/hjzqm8', target='_blank') DONATE NOW
-                li#tickets-nav
-                  a(href='https://commerce.cpsma.berkeley.edu/Tickets/tickets/production.aspx?productionNumber=9990&', target='_blank') TICKETS
-              ul.nav.navbar-nav.navbar-right
-                li
-                  a.social-link(href='https://www.facebook.com/events/569750673151001/', target='_blank')
-                    img.img-rounded.social-icon(src='/images/facebook-icon.png')
-                li
-                  a.social-link(href='https://www.instagram.com/berkeleystarofficial', target='_blank')
-                    img.img-rounded.social-icon(src='/images/instagram-icon.png')
-                li
-                  a.social-link(href='https://www.twitter.com/berkeleys_star', target='_blank')
-                    img.img-rounded.social-icon(src='/images/twitter-icon.png')
+extends layout
 
-    #myCarousel.carousel.slide(data-ride='carousel')
-      //
-         Indicators 
-      ol.carousel-indicators
-        li.active(data-target='#myCarousel', data-slide-to='0')
-        li(data-target='#myCarousel', data-slide-to='1')
-        li(data-target='#myCarousel', data-slide-to='2')
-        li(data-target='#myCarousel', data-slide-to='3')
-        li(data-target='#myCarousel', data-slide-to='4')
-      .carousel-inner
-        .item.active
-          img(class='push-up', src='/images/berkeley_view.jpg', alt='First slide')
-          .container
-            .carousel-caption
-              h1 Berkeley's Star
-              p Berkeley's best singing competition will be held December 2nd at 7 PM
-              p
-                a.btn.btn-lg.btn-primary(href='https://commerce.cpsma.berkeley.edu/Tickets/tickets/production.aspx?productionNumber=9990&', target='_blank', role='button') Get Tickets
-        .item
-          img(class='push-up', src='/images/sean_kingston.jpg', alt='Second slide')
-          .container
-            .carousel-caption
-              h1 Sean Kingston will be here
-              p And he can take ya there
-              p
-                a.btn.btn-lg.btn-primary(href='/#acts', role='button') Learn more
-        .item
-          img(id='roy_car', src='/images/oasis-of-the-seas.jpg', alt='Third slide')
-          .container
-            .carousel-caption(id='roy-car-cap')
-              h1 Great Prizes
-              p First prize is a 7 day Royal Caribbean Cruise
-        .item
-          img(src='/images/zellerbach.jpg', alt='Fourth slide')
-          .container
-            .carousel-caption
-              h1 Zellerbach Hall
-              p UC Berkeley's premier performance venue
-        .item
-          img(id='boys_and_girls_img', src='/images/bg-logo-negative.jpg', alt='Fifth slide')
-          .container
-            .carousel-caption
-              div(id='boys_and_girls_font')
-                h1 
-                  | Proceeds benefit
-                  br
-                  | Boys & Girls Clubs of Oakland
-                p
-                  a.btn.btn-lg.btn-primary(href='/#philanthropy', role='button') Philanthropy
-      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-        span.glyphicon.glyphicon-chevron-left
-      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-        span.glyphicon.glyphicon-chevron-right
+block content
+  #myCarousel.carousel.slide(data-ride='carousel', data-pause='hover')
+    //
+       Indicators 
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel', data-slide-to='0')
+      li(data-target='#myCarousel', data-slide-to='1')
+      li(data-target='#myCarousel', data-slide-to='2')
+      li(data-target='#myCarousel', data-slide-to='3')
+      li(data-target='#myCarousel', data-slide-to='4')
+    .carousel-inner
+      .item.active
+        img#top-11-with-brent(src='/images/top-11-with-brent.jpg', alt='First slide')
+        .container
+          .carousel-caption
+            h1 Berkeley's Star
+            p UC Berkeley’s Premier Singing Competition benefiting Boys and Girls Cubs of Oakland
+      .item
+        iframe#music-video(width="889", height="500", src="//www.youtube.com/embed/F0fGX_IAO1w", frameborder="0", allowfullscreen)
+      .item
+        img#grant-winning(src='/images/grant-singing.jpg', alt='Grant Winning')
+        .container
+          .carousel-caption(id='roy-car-cap')
+            h1 Berkeley’s Star 2014 is Grant Genske
+            p We raised $20,000 for the Boys and Girls Clubs of Oakland
+      .item
+        img(id='boys_and_girls_img', src='/images/edge-of-glory-bw.jpg', alt='Fifth slide')
+        .container
+          .carousel-caption
+            h1 Are You Berkeley’s Star 2015?
+            p Audition information coming soon!
+      .item
+        img(src='/images/zellerbach.jpg', alt='Fourth slide')
+        .container
+          .carousel-caption
+            h1 Zellerbach Hall
+            p UC Berkeley's premier performance venue
+    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left
+    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right
 
-    .jumbotron#vid-container
-      .container
-        iframe(width="800", height="450", src="//www.youtube.com/embed/F0fGX_IAO1w", frameborder="0", allowfullscreen)
-
-    .container.marketing
-      //
-         Three columns of text below the carousel 
-      .row
-        .col-md-3
-          img.img-rounded(src='/images/folded11.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
-          h2 About
-          p
-            | Berkeley's Star will be held at Zellerbach Hall on December 2nd.
-            | This is the biggest singing competition that Berkeley has to offer, so don't miss out!
-          p
-            a.btn.btn-default(href='/#about', role='button') View details »
-        //
-           /.col-lg-4 
-        .col-md-3
-          img.img-rounded(src='/images/ticket.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
-          h2 Tickets
-          p
-            | Get your tickets for Berkeley's Star. They are still available but are going fast, so be sure to get yours
-            | before they're gone!
-          p
-            a.btn.btn-default(href='https://commerce.cpsma.berkeley.edu/Tickets/tickets/production.aspx?productionNumber=9990&', target='_blank', role='button') Get Tickets »
-        //
-           /.col-lg-4 
-        .col-md-3
-          img.img-rounded(src='/images/bg_clubs_oak.jpg', alt='Generic placeholder image', style='width: 230px; height: 140px;')
-          h2 Philanthropy
-          p
-            | As one of Phi Kappa Psi's semi-annual philanthropy events, all proceeds from the event will be donated to the
-            | Boys & Girls Clubs of Oakland.
-          p
-            a.btn.btn-default(href='/#philanthropy', role='button') View details »
-        //
-           /.col-lg-4 
-        .col-md-3
-          img.img-rounded(src='/images/striped6.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
-          h2 Great Music
-          p
-            | There will be several guest musical acts and judges including Sean Kingston.
-          p
-            a.btn.btn-default(href='/#acts', role='button') View details »
-        //
-           /.col-lg-4 
-      //
-         /.row 
-      //
-         START THE FEATURETTES 
-      hr.featurette-divider#about
-      .row.featurette
-        .col-md-5
-          img.featurette-image.img-responsive(src='/images/berkeleys-star-logo.jpg', alt='Generic placeholder image')
-        .col-md-1
-        .col-md-6
-          h2.featurette-heading
-            | Berkeley's Star.
-            br
-            span.text-muted It'll blow your mind.
-          br
-          p.lead 
-            | Phi Kappa Psi is excited to host Berkeley’s Star 2014 in collaboration
-            | with the Boys & Girls Clubs of Oakland. Berkeley’s Star is the biggest
-            | singing competition at UC Berkeley hosted at the campus’s most premier
-            | local venue: Zellerbach Hall. Twelve finalists have been singled out
-            | through a series of exciting and comprehensive auditions over the past
-            | month. The twelve will compete at the Live Show on December 2nd where
-            | they will perform alongside guest performances from the judges and
-            | upcoming talent in the entertainment industry. The winner not only
-            | becomes Berkeley’s Star 2014, but also wins a seven-day cruise on Royal
-            | Caribbean International’s Oasis or Allure of the Seas for two and a
-            | guaranteed audition in front of RCI Entertainment Department.
-      hr.featurette-divider#philanthropy
-      .row.featurette
-        .col-md-5
-          h2.featurette-heading
-            | Boys & Girls Clubs
-          br
-          p.lead
-            | WHY BOYS & GIRLS CLUBS?
-            br
-            | Boys & Girls Clubs are a safe place to learn and grow – all while having fun. It is
-            | the place where great futures are started each and every day. In every community,
-            | boys and girls are left to find their own recreation and companionship in the streets.
-            | An increasing number of children are at home with no adult care or supervision.
-            | Young people need to know that someone cares about them.
-            | Boys & Girls Clubs offer that and more. Club programs and services promote and
-            | enhance the development of boys and girls by instilling a sense of competence,
-            | usefulness, belonging and influence. 
-        .col-md-1
-        .col-md-6
-          img.featurette-image.img-responsive(src='/images/bg_clubs_oak.jpg', alt='Generic placeholder image')
-      hr.featurette-divider#acts
-      .row.featurette
-        .col-md-3
-          img.featurette-image.img-responsive(src='/images/lauren.jpg', alt='Generic placeholder image')
-        .col-md-1
-        .col-md-8 
-          h2.featurette-heading
-            | Great Special Guests
-          br
-          p.lead
-            | The Live Show will be held at the Zellerbach Hall on December 2nd, 2014, where the 10
-            | finalists will compete alongside guest performances from the judges, upcoming talent
-            | in the entertainment industry, and some of the most well known UC Berkeley student
-            | groups. Judges and performers include: Sean Kingston, Lauren Weintraub, and student
-            | groups soon to be announced!
-          p
-            a.btn.btn-default(href='/artists', role='button') Learn more about the artists »
-      hr.featurette-divider
-      footer
-        p.pull-right
-          a(href='#') Back to top
+  .container.marketing
+    //
+       Three columns of text below the carousel 
+    .row
+      .col-md-3
+        img.img-rounded(src='/images/folded11.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        h2 About
         p
-          | Berkeley's Star 2014
-
-    script(src='/bootstrap/js/bootstrap.min.js')
+          | Berkeley's Star will be held at Zellerbach Hall on December 2nd.
+          | This is the biggest singing competition that Berkeley has to offer, so don't miss out!
+        p
+          a.btn.btn-default(href='/#about', role='button') View details »
+      //
+         /.col-lg-4 
+      .col-md-3
+        img.img-rounded(src='/images/ticket.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        h2 Tickets
+        p
+          | Get your tickets for Berkeley's Star. They are still available but are going fast, so be sure to get yours
+          | before they're gone!
+        p
+          a.btn.btn-default(href='https://commerce.cpsma.berkeley.edu/Tickets/tickets/production.aspx?productionNumber=9990&', target='_blank', role='button') Get Tickets »
+      //
+         /.col-lg-4 
+      .col-md-3
+        img.img-rounded(src='/images/bg_clubs_oak.jpg', alt='Generic placeholder image', style='width: 230px; height: 140px;')
+        h2 Philanthropy
+        p
+          | As one of Phi Kappa Psi's semi-annual philanthropy events, all proceeds from the event will be donated to the
+          | Boys & Girls Clubs of Oakland.
+        p
+          a.btn.btn-default(href='/#philanthropy', role='button') View details »
+      //
+         /.col-lg-4 
+      .col-md-3
+        img.img-rounded(src='/images/striped6.png', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        h2 Great Music
+        p
+          | There will be several guest musical acts and judges including Sean Kingston.
+        p
+          a.btn.btn-default(href='/#acts', role='button') View details »
+      //
+         /.col-lg-4 
+    //
+       /.row 
+    //
+       START THE FEATURETTES 
+    hr.featurette-divider#about
+    .row.featurette
+      .col-md-5
+        img.featurette-image.img-responsive(src='/images/berkeleys-star-logo.jpg', alt='Generic placeholder image')
+      .col-md-1
+      .col-md-6
+        h2.featurette-heading
+          | Berkeley's Star.
+          br
+          span.text-muted It'll blow your mind.
+        br
+        p.lead 
+          | Berkeley’s Star is the first and only singing competition held for
+          | UC Berkeley Students in collaboration with the Boys & Girls Clubs of
+          | Oakland.  This amazing event hosted by Phi Kappa Psi brings together
+          | some of the most talented singers and rappers on campus, selected
+          | through a series of exciting and comprehensive auditions, for a night
+          | of truly electrifying performances.  The top individuals selected each
+          | year compete at a Live Show, hosted at Zellerbach Hall, alongside guest
+          | performances from our panel of judges and upcoming talent in the
+          | entertainment industry.  Past performers and judges have included Lauren
+          | Weintraub, Sam Watters, and Sean Kingston. At the end of the night the 
+          | judges and the audience select the newest Berkeley’s Star.  In its first
+          | year alone Berkeley’s Star not only hosted an event whose caliber has
+          | never before been matched on campus, but Phi Kappa Psi also raised over
+          | $20,000 in support of the Boys & Girls Clubs of Oakland. 
+    hr.featurette-divider#philanthropy
+    .row.featurette
+      .col-md-5
+        h2.featurette-heading
+          | Boys & Girls Clubs
+        br
+        p.lead
+          | WHY BOYS & GIRLS CLUBS?
+          br
+          | Boys & Girls Clubs are a safe place to learn and grow – all while having fun. It is
+          | the place where great futures are started each and every day. In every community,
+          | boys and girls are left to find their own recreation and companionship in the streets.
+          | An increasing number of children are at home with no adult care or supervision.
+          | Young people need to know that someone cares about them.
+          | Boys & Girls Clubs offer that and more. Club programs and services promote and
+          | enhance the development of boys and girls by instilling a sense of competence,
+          | usefulness, belonging and influence. 
+      .col-md-7
+        img#bg-check.featurette-image.img-responsive(src='/images/bg-check.jpg', alt='Generic placeholder image')
+    hr.featurette-divider#acts
+    .row.featurette
+      .col-md-12
+        h2.featurette-heading
+          | Great Special Guests
+        br
+        p.lead
+          | Announcement Coming Soon!

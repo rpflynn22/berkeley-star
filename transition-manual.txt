@@ -1,0 +1,5 @@
+THE STACK
+	Node.js (nodejs.org) + Express.js (expressjs.org)
+		These are the main elements that drive the application
+	Most of the application is solely front-end, which is written in Jade (jade-lang.com), which is essentially html-shorthand which lets you embed javascript as well
+		These files can be found in the "views" folder of the application. Again, this is most of the code currently contained in the application
