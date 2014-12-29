@@ -33,17 +33,17 @@ html
                     span.caret
                   ul.dropdown-menu(role='menu')
                     li
-                      a(href='#') Performances
+                      a(href='#', data-toggle='modal', data-target='#myModal') Performances
                     li
-                      a(href='#') Photos
+                      a(href='#', data-toggle='modal', data-target='#myModal') Photos
                     li
-                      a(href='#') Special Guests
+                      a(href='#', data-toggle='modal', data-target='#myModal') Special Guests
                     li
-                      a(href='#') Top 12
+                      a(href='#', data-toggle='modal', data-target='#myModal') Top 12
                 li#fund-me
                   a(href='http://www.gofundme.com/hjzqm8', target='_blank') DONATE NOW
                 li#tickets-nav
-                  a(href='/tickets-coming-soon', target='_blank') TICKETS
+                  a(href='#', data-toggle='modal', data-target='#myModal') TICKETS
               ul.nav.navbar-nav.navbar-right
                 li
                   a.social-link(href='https://www.facebook.com/events/569750673151001/', target='_blank')
@@ -54,6 +54,16 @@ html
                 li
                   a.social-link(href='https://www.twitter.com/berkeleys_star', target='_blank')
                     img.img-rounded.social-icon(src='/images/twitter-icon.png')
+    .modal.fade#myModal(role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') &times;
+            h4.modal-title More Info Coming Soon!
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+
     block content
 
     br
