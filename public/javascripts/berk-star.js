@@ -1,5 +1,19 @@
 $(window).resize(updateHeight);
 $(document).ready(function() {
+    var path = window.location.pathname;
+    if (path == '/') {
+        activeNavTabs();
+    } else if (path == '/sponsors') {
+        makeActive('sponsors-nav');
+    }
+});
+
+function makeActive(idToActivate) {
+    $('#home-nav, #philanthropy-nav, #about-nav, #2014-nav, #acts-nav, #fund-me, #tickets-nav, #sponsors-nav, #staff-nav').removeClass('active');
+    $('#' + idToActivate).addClass('active');
+}
+
+function activeNavTabs() {
     var about = $('#about').offset().top;
     var philanthropy = $('#philanthropy').offset().top;
     var acts = $('#acts').offset().top;
@@ -19,11 +33,6 @@ $(document).ready(function() {
             makeActive('home-nav');
         }
     });
-});
-
-function makeActive(idToActivate) {
-    $('#home-nav, #philanthropy-nav, #about-nav, #acts-nav').removeClass('active');
-    $('#' + idToActivate).addClass('active');
 }
 
 function adjustSlideMargins() {

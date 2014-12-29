@@ -6,9 +6,14 @@ router.get('/', function(req, res) {
   res.render('carousel');
 });
 
-/* GET tickets coming soon page. */
-router.get('/tickets-coming-soon', function(req, res) {
-  res.render('tickets-coming-soon');
+/* GET sponsors page. */
+router.get('/sponsors', function(req, res) {
+  res.render('sponsors');
+});
+
+/* GET staff page. */
+router.get('/staff', function(req, res) {
+  res.render('staff');
 });
 
 module.exports = router;

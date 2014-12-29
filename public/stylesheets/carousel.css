@@ -181,3 +181,16 @@ body {
     margin-top: 0px;
   }
 }
+
+/* ############## Sponsors Page ############## */
+
+.sponsor-image {
+  max-height: 80%;
+  max-width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.sponsor-panel {
+  height: 400px;
+}

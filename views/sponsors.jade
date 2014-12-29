@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  .jumbotron
+    .container
+      h1 Sponsors & Partners
+      p Without the help of our generous sponsors and partners, none of this would be possible!
+      p
+        a.btn.btn-primary.btn-lg(href='#sponsors-container', role='button') View Sponsors
+  .container#sponsors-container
+    .row
+      .col-lg-6
+        a(href='http://www.phikappapsi.com/Home', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title Phi Kappa Psi
+            .panel-body
+              img.sponsor-image(src='/images/phi-kappa-psi-logo.jpg')
+      .col-lg-6
+        a(href='http://www.royalcaribbean.com/', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title Royal Caribbean
+            .panel-body
+              img.sponsor-image(src='/images/royal-caribbean-logo.jpg')
+    .row
+      .col-lg-6
+        a(href='https://www.spotify.com/', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title Spotify
+            .panel-body
+              img.sponsor-image(src='/images/spotify-logo.jpg')
+      .col-lg-6
+        a(href='http://www.buildpizzeria.com/', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title Build Pizzeria
+            .panel-body
+              img.sponsor-image(src='/images/build-logo.jpg')
+    .row
+      .col-lg-6
+        a(href='http://berkeley-underground.com/', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title Underground Nightclub
+            .panel-body
+              img.sponsor-image(src='/images/underground-logo.jpg')
+      .col-lg-6
+        a(href='http://www.asuc.org/', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title ASUC
+            .panel-body
+              img.sponsor-image(src='/images/asuc-logo.jpg')
+    .row
+      .col-lg-6
+        a(href='http://www.pepsico.com/', target='_blank')
+          .panel.panel-default.sponsor-panel
+            .panel-heading
+              h2.panel-title Pepsi
+            .panel-body
+              img.sponsor-image(src='/images/pepsi-logo.jpg')
