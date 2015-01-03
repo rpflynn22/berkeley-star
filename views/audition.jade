@@ -1,0 +1,36 @@
+extends layout
+
+block content
+
+  .container
+    br
+    h1(style='text-align:center;') Audition to be Berkeley's Star 2015!
+    br
+    .row
+      .col-lg-3
+      .col-lg-6
+        .well
+          form(role='form', action='/audition', method='post')
+            .form-group
+              label First Name
+              input.form-control(type='text', name='firstName', placeholder='First Name')
+            .form-group
+              label Last Name
+              input.form-control(type='text', name='lastName', placeholder='Last Name')
+            .form-group
+              label Year
+              select.form-control(name='year')
+                option(value='', selected disabled) Year
+                each val in [1, 2, 3, 4, 5, 6]
+                  option(value='#{val}') #{val.toString()}
+            .form-group
+              label Email
+              input.form-control(type='email', name='email', placeholder='Email')
+            .form-group
+              label Phone Number
+              input.form-control(type='tel', name='phoneNumber', placeholder='Phone Number')
+            .form-group
+              label Audition Link
+              input.form-control(type='url', name='auditionLink', placeholder='Audition Link')
+            button.btn.btn-default(type='submit') Submit Audition!
+      .col-lg-3

@@ -5,11 +5,17 @@ $(document).ready(function() {
         activeNavTabs();
     } else if (path == '/sponsors') {
         makeActive('sponsors-nav');
+    } else if (path == '/staff') {
+        makeActive('staff-nav');
+    } else if (path == 'audition') {
+        makeActive('audition-nav');
     }
 });
 
+//function 
+
 function makeActive(idToActivate) {
-    $('#home-nav, #philanthropy-nav, #about-nav, #2014-nav, #acts-nav, #fund-me, #tickets-nav, #sponsors-nav, #staff-nav').removeClass('active');
+    $('#home-nav, #philanthropy-nav, #about-nav, #2014-nav, #acts-nav, #audition-nav, #fund-me, #tickets-nav, #sponsors-nav, #staff-nav').removeClass('active');
     $('#' + idToActivate).addClass('active');
 }
 

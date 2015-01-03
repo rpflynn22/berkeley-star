@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .container
+    br
+    h1 All Auditions
+    br
+    table.table.table-hover
+      tr
+        th First
+        th Last
+        th Year
+        th Email
+        th Phone
+        th Video Link
+      for audition in auditions
+        tr
+          td #{audition.firstName}
+          td #{audition.lastName}
+          td #{audition.year}
+          td #{audition.email}
+          td #{audition.phoneNumber}
+          td 
+            a(href='#{audition.auditionLink}', target='_blank') #{audition.auditionLink}

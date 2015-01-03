@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+  .container
+    br
+    h1(style='text-align:center;') Authenticate
+    br
+    .row
+      .col-md-3
+      .col-md-6
+        form(role='form', action='/auditions-authentication', method='post')
+          .form-group
+            input.form-control(name='username', placeholder='Name')
+          .form-group
+            input.form-control(type='password', name='password', placeholder='Password')
+          .form-group
+            button.btn.btn-default(type='submit') Submit
+      .col-md-3
