@@ -2,12 +2,13 @@ $(window).resize(updateHeight);
 $(document).ready(function() {
     var path = window.location.pathname;
     if (path == '/') {
-        activeNavTabs();
+        //activeNavTabs();
+        makeActive('home-nav');
     } else if (path == '/sponsors') {
         makeActive('sponsors-nav');
     } else if (path == '/staff') {
         makeActive('staff-nav');
-    } else if (path == 'audition') {
+    } else if (path == '/audition') {
         makeActive('audition-nav');
     }
 });
@@ -19,7 +20,7 @@ function makeActive(idToActivate) {
     $('#' + idToActivate).addClass('active');
 }
 
-function activeNavTabs() {
+/*function activeNavTabs() {
     var about = $('#about').offset().top;
     var philanthropy = $('#philanthropy').offset().top;
     var acts = $('#acts').offset().top;
@@ -39,7 +40,7 @@ function activeNavTabs() {
             makeActive('home-nav');
         }
     });
-}
+}*/
 
 function adjustSlideMargins() {
     var grantWinningHeight = $('.carousel').height();

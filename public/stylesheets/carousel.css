@@ -185,12 +185,12 @@ body {
 /* ############## Sponsors Page ############## */
 
 .sponsor-image {
+  max-width: 60%;
   max-height: 80%;
-  max-width: 80%;
   display: block;
   margin: auto;
 }
 
 .sponsor-panel {
-  height: 400px;
+  height: 300px;
 }
