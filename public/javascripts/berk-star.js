@@ -2,6 +2,7 @@ $(window).resize(updateHeight);
 $(document).ready(function() {
     var path = window.location.pathname;
     if (path == '/') {
+        updateHeight();
         //activeNavTabs();
         makeActive('home-nav');
     } else if (path == '/sponsors') {
