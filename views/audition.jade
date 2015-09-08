@@ -9,28 +9,20 @@ block content
     .row
       .col-lg-3
       .col-lg-6
-        .well
-          form(role='form', action='/audition', method='post')
-            .form-group
-              label First Name
-              input.form-control(type='text', name='firstName', placeholder='First Name')
-            .form-group
-              label Last Name
-              input.form-control(type='text', name='lastName', placeholder='Last Name')
-            .form-group
-              label Year
-              select.form-control(name='year')
-                option(value='', selected disabled) Year
-                each val in [1, 2, 3, 4, 5, 6]
-                  option(value='#{val}') #{val.toString()}
-            .form-group
-              label Email
-              input.form-control(type='email', name='email', placeholder='Email')
-            .form-group
-              label Phone Number
-              input.form-control(type='tel', name='phoneNumber', placeholder='Phone Number')
-            .form-group
-              label Audition Link
-              input.form-control(type='url', name='auditionLink', placeholder='Audition Link')
-            button.btn.btn-default(type='submit') Submit Audition!
+        ul.list-group
+          li.list-group-item
+            .media-body
+              h4 
+                b Part 1
+              p Send two 60-90 second private YouTube videos of you singing to berkeleystarofficial@gmail.com.
+          li.list-group-item
+            .media-body
+              h4 
+                b Part 2
+              p Provide your Name, Year, Major, Club/Organization involvement and a one-paragraph description of why you are auditioning in an attached word document on the email.
+          li.list-group-item
+            .media-body
+              h4 
+                b Part 3
+              p Online auditions must be sent in by Wednesday, September 30th. The top 30 video auditions will be invited to a live audition on October 4, 2015 via email.
       .col-lg-3
