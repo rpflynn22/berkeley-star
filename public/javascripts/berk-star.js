@@ -46,10 +46,10 @@ function makeActive(idToActivate) {
 function adjustSlideMargins() {
     var grantWinningHeight = $('.carousel').height();
     var grantWinningWidth = Math.floor(grantWinningHeight * (2048 / 968));
-    $("#grant-winning").css('width', grantWinningWidth);
+    $(".grant-winning").css('width', grantWinningWidth);
     var pageWidth = $('body').width();
     var grantMarginLeft = Math.floor(pageWidth / 2) - Math.floor(grantWinningWidth / 2);
-    $('#grant-winning').css('margin-left', grantMarginLeft);
+    $('.grant-winning').css('margin-left', grantMarginLeft);
     var videoWidth = $('#music-video').width();
     var videoMarginLeft = Math.floor(pageWidth / 2) - Math.floor(videoWidth / 2);
     $('#music-video').css('margin-left', videoMarginLeft);
